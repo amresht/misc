@@ -1,0 +1,20 @@
+Project:
+
+1. Assumption is made that every dog collar when connects and saves its GPS location every 5 minute. 
+This can be changed to fit the requirements by adjusting the pollign cycle.
+
+2. The services can be implemented as monolitic services in the beginning. Later on each service can be broken down in smaller 
+microservices which can have their own database/ servers/containers. 
+
+3. The database can be chosen as relational in the beginning. Any open source DB such as MySQL or PostGreSQL can be used.
+
+4. The implementation of the services can be done on Linux/Unix like platform. 
+
+5. Choice of language to implementation can be Python/PHP for open source cost considerations.
+
+6. A mesaging queue solution such as RabbitMQ, ActiveMQ is used for the interchange of messages.
+
+7. The traffic exchanges data in JSON or XML format over HTTPS.  Encryption is needed for privacy concerns.
+
+8. As the number of active users and traffic increases the number of hosts hosting services/middleware/database can be increased.
+
